@@ -1,10 +1,10 @@
-css
+css category1
 #media .medList ul li .box a {display:block;}
 #media .medList ul li .box a * { -webkit-transition: all 0.3s ease;-moz-transition: all 0.3s ease;-ms-transition: all 0.3s ease;-o-transition: all 0.3s ease;transition: all 0.3s ease;}
 #media .medList ul li .box a .plus {position:absolute;top:50px;right:50px;display:inline-block;vertical-align:middle;width:15px;height:15px;background:url('../images/ico/ico_plus.png') 0 0 no-repeat;}
 
 
-// category
+// category1
 	$('.linkMore ul li > a').each(function(){
 		$(this).hover(function(){
 			$(this).children().children('.plus').transition({rotate:'360deg'});
@@ -13,3 +13,15 @@ css
 		});
 	});
   
+
+
+
+
+// customer center   가로
+	$('.clist ul li').each(function(){
+		$(this).hover(function(){
+			$(this).children().children('.ico').transition({perspective: '48px', rotateY: '360deg'},600);
+		},function(){
+			$(this).children().children('.ico').transition({perspective: '48px', rotateY: '0deg'},0);
+		});
+	});
